@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Bookshelf</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="webfonts/all.min.css" />
+    <link rel="icon" href="pictures/LogoEN.jpg" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mx-3">
+          <!-- اللوغو -->
+          <a class="navbar-brand" href="indexEN.html">
+            <img
+              src="pictures/LogoEN.jpg"
+              alt="logo"
+              style="border-radius: 50%; width: 60px; height: 60px"
+            />
+          </a>
+
+          <!-- زر القائمة (في الموبايل) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- القوائم -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="indexEN.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sections
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="MathEN.html">Math</a></li>
+                  <li>
+                    <a class="dropdown-item" href="ElectricalEN.html"
+                      >Electrical</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ProgrammingEN.html"
+                      >Programming</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactEN.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="indexAR.html">عربية</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-5">
+            <fieldset>
+              <legend style="transform: translateX(-225%)">Contact Us</legend>
+
+              <form id="contactForm" action="php/save.php" method="post">
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    id="exampleFormControlInput1"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="exampleFormControlInput2" class="form-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control mt-2"
+                    id="exampleFormControlInput2"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">
+                    Message
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-grid">
+                  <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+              </form>
+              <div class="social-media mt-3">
+                <a
+                  href="https://www.instagram.com/ibrahimlaqqan?igsh=dnd5MDBqbnh5aw=="
+                  ><i class="fa-brands fa-instagram mx-1"></i
+                ></a>
+                <a href="https://www.facebook.com/share/19uCExuxSA/"
+                  ><i class="fa-brands fa-facebook mx-1"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/ibrahim-laqqan-598260374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  ><i class="fa-brands fa-linkedin mx-1"></i
+                ></a>
+                <a href="https://wa.me/+970595275231"
+                  ><i class="fa-brands fa-whatsapp mx-1"></i
+                ></a>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-md-6 mt-5 mb--1 img">
+            <img src="pictures/Book Library .jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
